@@ -1,0 +1,244 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+:root {
+    --background-color: white;
+    --text-color: black;
+    --input-background-color: rgba(255, 255, 255, 0.1);
+    --input-border-color: #ccc;
+    --input-text-color: black;
+}
+
+/* Dark Theme */
+body.dark {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --input-background-color: rgba(255, 255, 255, 0.1);
+    --input-border-color: #e0e0e0;
+    --input-text-color: #e0e0e0;
+}
+
+/* Premium Theme */
+body.premium {
+    --background-color: #8a2be2;
+    --text-color: #fff;
+    --input-background-color: rgba(255, 255, 255, 0.1);
+    --input-border-color: #fff;
+    --input-text-color: #fff;
+}
+
+/* Standard Theme */
+body.standard {
+    --background-color: #87ceeb;
+    --text-color: black;
+    --input-background-color: rgba(255, 255, 255, 0.1);
+    --input-border-color: #ccc;
+    --input-text-color: black;
+}
+
+/* Free Theme */
+body.free {
+    --background-color: white;
+    --text-color: black;
+    --input-background-color: rgba(0, 0, 0, 0.1);
+    --input-border-color: #ccc;
+    --input-text-color: black;
+}
+
+/* Authentication Forms */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--background-color);
+}
+
+.auth-form {
+    background: var(--background-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.auth-form h2 {
+    margin-top: 0;
+}
+
+.auth-form input,
+.auth-form select,
+.auth-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--input-border-color);
+    background: var(--input-background-color);
+    color: var(--input-text-color);
+    border-radius: 4px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    color: var(--text-color);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar .user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.sidebar .user-logo {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    font-size: 80px;
+}
+
+.sidebar .nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .nav li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .nav li a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.sidebar .nav .nav-heading {
+    font-weight: bold;
+}
+
+.sidebar .upgrade-btn,
+.sidebar .logout-btn {
+    width: 100%;
+    padding: 10px;
+    background: var(--upgrade-btn-background, #007bff);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+.page-heading {
+    font-size: 2em;
+    margin-left: 30px;
+}
+
+/* Profile Page */
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.profile-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--input-border-color);
+    background: var(--input-background-color);
+    color: var(--input-text-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.profile-form button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Settings Page */
+.settings-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.settings-form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--input-border-color);
+    background: var(--input-background-color);
+    color: var(--input-text-color);
+    border-radius: 4px;
+}
+
+.settings-form button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Subscription Page */
+.subscription-card {
+    padding: 20px;
+    margin: 10px 0;
+    background: rgba(0, 0, 0, 0.4); /* 40% black overlay */
+    color: var(--text-color);
+    border-radius: 4px;
+}
+
+/* Refer a Friend Page */
+.refer-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.refer-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--input-border-color);
+    background: var(--input-background-color);
+    color: var(--input-text-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.refer-form button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
